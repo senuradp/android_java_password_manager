@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">கடவுச்சொல் மேலாளர்</string>
+    <string name="login">உள்நுழைய</string>
+    <string name="register">பதிவு</string>
+    <string name="first_name">முதல் பெயர்</string>
+    <string name="last_name">கடைசி பெயர்</string>
+    <string name="email">மின்னஞ்சல்</string>
+    <string name="password">கடவுச்சொல்</string>
+    <string name="login_have_acc">ஏற்கனவே ஒரு கணக்கு உள்ளதா? இங்கே உள்நுழைக</string>
+    <string name="reg_new_user">புதிய பயனர் ? இங்கே பதிவு செய்யுங்கள்</string>
+    <string name="search">தேடல்</string>
+    <string name="add_account">கணக்கு சேர்க்க</string>
+    <string name="social_media_name">சமூக ஊடகத்தின் பெயர்</string>
+    <string name="account_page_url">கணக்குப் பக்க நீட்டிப்பு</string>
+    <string name="update_acc">கணக்கைப் புதுப்பிக்கவும்</string>
+    <string name="generate_password">கடவுச்சொல்லை உருவாக்கவும்</string>
+    <string name="gen_8_character">8 எழுத்து கடவுச்சொல்லை உருவாக்கவும்</string>
+    <string name="gen_16_character">16 எழுத்து கடவுச்சொல்லை உருவாக்கவும்</string>
+    <string name="logout">வெளியேறு</string>
+</resources>

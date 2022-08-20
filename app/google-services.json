@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "450735382574",
+    "firebase_url": "https://passwordmanager-fc464-default-rtdb.firebaseio.com",
+    "project_id": "passwordmanager-fc464",
+    "storage_bucket": "passwordmanager-fc464.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450735382574:android:014c045dab2129eb90bfbf",
+        "android_client_info": {
+          "package_name": "com.example.passwordmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450735382574-2g9f8265vueo6tjn7dh5c6rl8qmdppmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf2PHR8q9jR1ylGKIEDYnpi2c1FsPAJps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450735382574-2g9f8265vueo6tjn7dh5c6rl8qmdppmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

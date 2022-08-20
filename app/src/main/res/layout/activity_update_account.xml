@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAccount">
+
+<!--    banner-->
+
+
+    <TextView
+        android:id="@+id/textViewUpdt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="@string/update_acc"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNameUpdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdd"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSpinnerImg"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNameUpdt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconImg"
+        app:layout_constraintVertical_bias="0.126">
+
+        <Spinner
+            android:id="@+id/changeImgIconSpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    social media name -->
+
+
+    <EditText
+        android:id="@+id/txtNameUpdt"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/social_media_name"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdt"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <!--    email-->
+    <EditText
+        android:id="@+id/txtEmailUpdt"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/email"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameUpdt"
+        app:layout_constraintVertical_bias="0.04" />
+
+<!-- password -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textInputLayoutUpdtCard"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailUpdt"
+        app:layout_constraintVertical_bias="0.04">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutUpdt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPswdUpdt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--    account page url to social media page-->
+    <EditText
+        android:id="@+id/txtAccPageUrlUpdt"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:hint="@string/account_page_url"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUpdtCard"
+        app:layout_constraintVertical_bias="0.06" />
+
+<!--    update details button-->
+    <Button
+        android:id="@+id/btnUpdt"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/button_Blue"
+        android:text="@string/update_acc"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccPageUrlUpdt"
+        app:layout_constraintVertical_bias="0.151" />
+
+<!--    back button to home page-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/grey1_BT"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdt"
+        app:layout_constraintVertical_bias="0.831">
+
+        <ImageView
+            android:id="@+id/btnBackUpdt"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/back"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

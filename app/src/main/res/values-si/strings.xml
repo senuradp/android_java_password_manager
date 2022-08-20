@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">මුරපද කළමනාකරු</string>
+    <string name="login">ඇතුල් වන්න</string>
+    <string name="register">ලියාපදිංචි කරන්න</string>
+    <string name="first_name">මුල් නම</string>
+    <string name="last_name">අවසන් නම</string>
+    <string name="email">විද්යුත් තැපෑල</string>
+    <string name="password">මුරපදය</string>
+    <string name="login_have_acc">දැනටමත් ගිණුමක් තිබේද? මෙතනින් ලොග් වන්න</string>
+    <string name="reg_new_user">නව පරිශීලක? මෙහි ලියාපදිංචි වන්න</string>
+    <string name="search">සොයන්න</string>
+    <string name="add_account">ගිණුමක් එකතු කරන්න</string>
+    <string name="social_media_name">සමාජ මාධ්‍ය නාමය</string>
+    <string name="account_page_url">ගිණුම් පිටු දිගුව</string>
+    <string name="update_acc">ගිණුම යාවත්කාලීන කරන්න</string>
+    <string name="generate_password">මුරපදය ජනනය කරන්න</string>
+    <string name="gen_8_character">අක්ෂර 8 ක මුරපදයක් ජනනය කරන්න</string>
+    <string name="gen_16_character">අක්ෂර 16 ක මුරපදයක් ජනනය කරන්න</string>
+    <string name="logout">පිටවීම</string>
+</resources>

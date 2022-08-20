@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <ImageView
+        android:id="@+id/profileImgBg"
+        android:layout_width="237dp"
+        android:layout_height="229dp"
+        app:layout_constraintBottom_toTopOf="@+id/profileLname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294"
+        app:srcCompat="@drawable/profilebg" />
+
+<!--    sample profile image-->
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="146dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImgBg"
+        app:layout_constraintEnd_toEndOf="@+id/profileImgBg"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/profileImgBg"
+        app:layout_constraintTop_toTopOf="@+id/profileImgBg"
+        app:layout_constraintVertical_bias="0.492"
+        app:srcCompat="@drawable/profileimg" />
+
+<!--    first name-->
+    <TextView
+        android:id="@+id/profileFname"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:text="@string/first_name"
+        android:textColor="@color/grey1_BT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImgBg"
+        app:layout_constraintVertical_bias="0.19" />
+
+<!--    last name-->
+    <TextView
+        android:id="@+id/profileLname"
+        android:layout_width="225dp"
+        android:layout_height="34dp"
+        android:text="@string/last_name"
+        android:textColor="@color/grey1_BT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toEndOf="@+id/profileFname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+<!--    email-->
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:text="@string/email"
+        android:textColor="@color/grey1_BT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileLname"
+        app:layout_constraintVertical_bias="0.102" />
+
+<!--    drop down to select and change language-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSpinner"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail"
+        app:layout_constraintVertical_bias="0.126">
+
+        <Spinner
+            android:id="@+id/changeLanguageSpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/languages"/>
+
+    </androidx.cardview.widget.CardView>
+
+<!-- logout button -->
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="370dp"
+        android:layout_height="58dp"
+        android:text="@string/logout"
+        app:cornerRadius="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/button_Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewSpinner"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <!-- back button to go to home-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/grey1_BT"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/back"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

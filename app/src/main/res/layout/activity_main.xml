@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    banner-->
+    <TextView
+        android:id="@+id/welcomeBanner"
+        android:layout_width="361dp"
+        android:layout_height="103dp"
+        android:gravity="center_horizontal"
+        android:text="Welcome to the
+        Password Manager App!"
+        android:textAlignment="center"
+        android:textColor="@color/grey1_BT"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+<!--    login button-->
+    <Button
+        android:id="@+id/fLogin"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/button_Blue"
+        android:text="@string/login"
+        android:textSize="17dp"
+        app:cornerRadius="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeBanner"
+        app:layout_constraintVertical_bias="0.1" />
+
+<!--    register button-->
+    <Button
+        android:id="@+id/fRegister"
+        android:layout_width="245dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/button_Blue"
+        android:text="@string/register"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fLogin"
+        app:layout_constraintVertical_bias="0.131" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

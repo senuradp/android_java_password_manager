@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_have_acc">Already have an account? Login here</string>
+    <string name="reg_new_user">New user ? Register here</string>
+    <string name="search">Search</string>
+    <string name="add_account">Add Account</string>
+    <string name="social_media_name">Social Media Name</string>
+    <string name="account_page_url">Account Page URL</string>
+    <string name="update_acc">Update Account</string>
+    <string name="generate_password">Generate Password</string>
+    <string name="gen_8_character">Generate 8 character password</string>
+    <string name="gen_16_character">Generate 16 character password</string>
+    <string name="logout">Logout</string>
+
+    <array name="languages">
+        <item>Change Language</item>
+        <item>English</item>
+        <item>Sinhala</item>
+        <item>Tamil</item>
+    </array>
+
+<!--    flaticon api key-->
+    <string name="flat_icon_key" translatable="false">1ee0385f24839ca19964f275926afaa6a842c08f</string>
+
+</resources>

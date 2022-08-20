@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <ImageView
+        android:id="@+id/profileImgBg"
+        android:layout_width="249dp"
+        android:layout_height="269dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"
+        app:srcCompat="@drawable/profilebg" />
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="154dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImgBg"
+        app:layout_constraintEnd_toEndOf="@+id/profileImgBg"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/profileImgBg"
+        app:layout_constraintTop_toTopOf="@+id/profileImgBg"
+        app:layout_constraintVertical_bias="0.492"
+        app:srcCompat="@drawable/profileimg" />
+
+    <TextView
+        android:id="@+id/profileFname"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:text="@string/first_name"
+        android:textColor="@color/grey1_BT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/profileImgBg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/profileLname"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:text="@string/last_name"
+        android:textColor="@color/grey1_BT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/profileImgBg"
+        app:layout_constraintTop_toBottomOf="@+id/profileFname"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:text="@string/email"
+        android:textColor="@color/grey1_BT"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/profileImgBg"
+        app:layout_constraintTop_toBottomOf="@+id/profileLname"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSpinner"
+        android:layout_width="305dp"
+        android:layout_height="62dp"
+        android:layout_marginRight="-79dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail"
+        app:layout_constraintVertical_bias="0.126">
+
+        <Spinner
+            android:id="@+id/changeLanguageSpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/languages" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="246dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/button_Blue"
+        android:text="@string/logout"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImgBg"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/grey1_BT"
+        app:cardCornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/back"
+            app:tint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
